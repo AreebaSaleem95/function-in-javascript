@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions - Modern JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <i class="fas fa-code"></i>
+                <span>JavaScript</span>
+            </div>
+            <h1>Arrow Functions</h1>
+            <p class="subtitle">Modern & Elegant Function Syntax</p>
+        </div>
+
+        <div class="content">
+            <div class="info-card">
+                <div class="card-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h3>What are Arrow Functions?</h3>
+                <p>A compact and elegant way to write functions in JavaScript. They provide a shorter syntax and lexical <code>this</code> binding.</p>
+            </div>
+
+            <div class="code-section">
+                <h3><i class="fas fa-code"></i> Syntax Examples</h3>
+                
+                <div class="code-comparison">
+                    <div class="code-block traditional">
+                        <div class="code-header">
+                            <i class="fas fa-history"></i>
+                            Traditional Function
+                        </div>
+                        <pre><code>function sum(a, b) {
+    return a + b;
+}</code></pre>
+                    </div>
+
+                    <div class="arrow-icon">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+
+                    <div class="code-block modern">
+                        <div class="code-header">
+                            <i class="fas fa-bolt"></i>
+                            Arrow Function
+                        </div>
+                        <pre><code>const sum = (a, b) => {
+    return a + b;
+}</code></pre>
+                    </div>
+                </div>
+
+                <div class="short-syntax">
+                    <h4><i class="fas fa-magic"></i> Even Shorter Syntax</h4>
+                    <div class="code-block short">
+                        <div class="code-header">
+                            <i class="fas fa-star"></i>
+                            One-liner
+                        </div>
+                        <pre><code>const sum = (a, b) => a + b;</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-compress-alt"></i>
+                    </div>
+                    <h4>Shorter Syntax</h4>
+                    <p>Less code, same functionality</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <h4>Lexical This</h4>
+                    <p>No more binding issues</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-arrow-up"></i>
+                    </div>
+                    <h4>Implicit Return</h4>
+                    <p>Return without keyword</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h4>No Constructor</h4>
+                    <p>Cannot use with new</p>
+                </div>
+            </div>
+
+            <div class="demo-section">
+                <h3><i class="fas fa-play"></i> Live Demo</h3>
+                <div class="demo-card">
+                    <div class="input-group">
+                        <label for="num1">Number 1:</label>
+                        <input type="number" id="num1" value="5" min="0" max="100">
+                    </div>
+                    <div class="input-group">
+                        <label for="num2">Number 2:</label>
+                        <input type="number" id="num2" value="3" min="0" max="100">
+                    </div>
+                    <button id="calculateBtn" class="calculate-btn">
+                        <i class="fas fa-calculator"></i>
+                        Calculate Sum
+                    </button>
+                    <div class="result" id="result">
+                        <span class="result-label">Result:</span>
+                        <span class="result-value" id="resultValue">8</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Made with <i class="fas fa-heart"></i> for JavaScript learners</p>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
